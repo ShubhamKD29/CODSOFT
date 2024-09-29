@@ -411,3 +411,45 @@ nav{
  }
 
 
+ /* footer */
+
+ footer{
+    margin-top: 10px;
+    color: white;
+    background-color: rgb(17, 36, 97);
+    height: 230px;
+ }
+
+.footer_content{
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer_content h3{
+    font-family: "Kanit", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.footer_social_media{
+    font-size: 20px;
+}
+
+.footer_social_media p{
+    text-align: center;
+}
+
+.fa-brands{
+    margin-left: 12px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.Copyright{
+    text-align: center;
+    font-size: 12px;
+}
