@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+CU:wght@100..400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: #e8e8e8;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* font-family: "Playwrite CU", system-ui; */
+    font-family: "Playfair Display", serif;
+    background-color: #e8e8e8;
+    min-height: 100vh;
+
+}
+
+/* desktop navigation */
+nav ul{
+    width:100%;
+    list-style: none;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height:10vh;
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight:550;
+}
+
+nav li{
+    height: 50px;
+    margin-right: 40px;
+}
+
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display:flex;
+    align-items:center;
+    color:rgb(163, 24, 163);
+}
+
+nav li:first-child{
+    margin-right: auto;
+    margin-left: 250px;
+}
+
+#first-name, #middle-name{
+    font-family: "Playwrite CU", system-ui;
+    background-color: rgba(102, 0, 102);
+    color:#e8e8e8;
+    word-spacing: 5px;
+    height:60%;
+    width:auto;
+    cursor: default;
+}
+
+#first-name{
+    font-size: 1.4em;
+}
+
+#middle-name{
+    word-spacing: 5px;
+    font-size: 1em;
+}
+
+#last-name{
+    font-family: "Playwrite CU", system-ui;
+    color:rgba(102, 0, 102);
+    background-color: #e8e8e8;
+    word-spacing: 5px;
+    height:60%;
+    width:auto;
+    font-size: 1.4em;
+    cursor: default;
+}
+
+#name{
+    flex-shrink: 0;   /* Prevents shrinking */
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;  /* Allows the content inside #name to wrap if necessary */
+}
+
+
+
+a:hover{
+    color:rgb(102, 0, 102);
+    text-decoration: underline;
+    text-underline-offset: 1.3em;
+    text-decoration-color:  rgb(102, 0, 102);
+}
+
+
+
+/* mobile navigation */
+
+.sidebar{
+    position: fixed;
+    top:0;
+    right:0;
+    height:100vh;
+    width:250px;
+    z-index:999;
+    background-color: #b4b2b2b6;
+    box-shadow:-10 0 10 rgba(0,0,0, 0.1);
+    display:none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+}
+
+.sidebar li{
+    width:100%;
+}
+
+.sidebar a{
+    width:100%;
+}
+
+.menu-button{
+    display:none;
+}
+
+.close-button{
+    display:inline-block;
+}
+
+
+/* profile */
+
+
+.profile-pic-container{
+    display:flex;
+    height:500px;
+    width:500px;
+    
+}
+
+.profile-pic-container img{
+    height:500px;
+    width:500px;
+    border-radius: 50%;
+    border:2px solid purple;
+    margin-top: 50px;
+}
+
+#profile{
+    padding-top:4vh;
+    height:96vh;
+    margin:0 10rem;
+    box-sizing:border-box;
+    min-height:fit-content;
+    display:flex;
+    justify-content: center;
+    gap:5rem;
+    height:80vh;
+}
+
+.personal-info-container{
+    align-self: center;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.text_1{
+    font-weight: 550;
+    text-align: center;
+    font-size: 1.4rem;
+} 
+
+.text_2{
+    font-weight: 550;
+    text-align: center;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(102, 0, 102);
+}
+
+.social-container{
+    display: flex;
+    justify-content:center;
+    align-items:self-end;
+    margin-top: 1rem;
+    margin-right: 8px;
+    gap: 1rem;
+}
+
+#instagram{
+    margin-bottom: 8px;
+}
+/* icon */
+
+.icon{
+    cursor: pointer;
+    height: 4.5rem;
+}
+
+/* profile buttons */
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+#btn-1, #btn-2{
+    border: rgb(102, 0, 102) 0.1rem solid;
+}
+
+#btn-1:hover, #btn-2:hover{
+   cursor: pointer;
+}
+
+#btn-2, #btn-1:hover{
+   background-color: rgb(102, 0, 102);
+   color: white;
+ }
+
+ #btn-2:hover{
+    background-color: rgb(102, 0, 102);
+ }
+
+  #btn-1{
+    background: none;
+ }
+
+
+ /* About */
+#about{
+    margin-top: 100px;
+    position: relative;
+}
+
+.starting-text{
+    font-size: 20px;
+    font-family: "Playwrite CU", system-ui;
+    color:rgba(102, 0, 102);
+}
+
+.about-text{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.me{
+    color: rgb(102, 0, 102);
+}
+
+
+.about-main-container, .about-content-container{
+    display: flex;
+}
+
+.about-image{
+    height: 70px;
+    width: 95px;
+
+}
+
+.about-content-container{
+    height:700px;
+    width:800px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 5rem;
+}
+
+.about-main-container{
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.about-content-container, .about-subheading, .about-info{
+    text-align: center;
+}
+
+#about-image{
+    height:800px;
+    width:550px;
+}
+
+.about-myself{
+    height: 200px;
+    width:600px;
+    flex: 2;
+    margin: 10px;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+
+.about-experience-container, .about-education-container, .about-myself{
+    height:200px;
+    width:500px;
+    border: 2px solid black;
+    text-align: center;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.about-content-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+
+.about-experience-container:hover, .about-education-container:hover, .about-myself:hover {
+    transform: translateY(-10px);
+    border:2px solid rgb(102, 0, 102);
+    background-color: rgb(175, 41, 175);
+    color:white;
+    font-weight: 900;
+}
+
+.about-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.about-myself:hover {
+    transform: translateY(-10px); /* Lifts the content on hover */
+}
+
+.about-sentence {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.about-content-container:hover {
+    transform: scale(1.01);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+    /* border: 3px solid rgb(102, 0, 102);  */
+}
+
+.about-subheading{
+    color: rgb(102, 0, 102);
+    font-weight: 800;
+}
+
+/* Experince */
+
+.checkmark{
+    height:40px;
+    width: 40px;
+}
+
+#experience{
+    position: relative;
+    margin-top: 50px;
+}
+
+.sub-text-1{
+    font-size: 20px;
+    font-family: "Playwrite CU", system-ui;
+    color:rgba(102, 0, 102);
+}
+
+.text-1{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.internship-section {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:0 0 50px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.notification {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #4CAF50;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#active-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4CAF50;
+    animation: blink 1s infinite; /* Blinking effect */
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.about-container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 8rem;
+    height: 800px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap:2rem;
+    justify-content: space-around;
+    height:700px;
+}
+
+article{
+    display: flex;
+    width:10rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+    margin-top: 100px;
+}
+
+
+.details-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 790px;
+    width: 450px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+.details-container-2{
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 450px;
+}
+
+.experience-details-container{
+    display: flex;
+    gap: 2rem;
+    width:100%;
+}
+
+#skill-sets{
+   align-self: center;
+   color: rgba(102, 0, 102);
+   text-decoration:underline;
+   font-weight: 800;
+}
+
+.internship-heading{
+   color: rgba(102, 0, 102);
+   text-decoration:underline;
+   font-weight: 800;
+}
+
+/* Projects */
+
+.projects-container{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+}
+
+.card{
+    height: 584px;
+    width: 581px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.card-images{
+    height: 600px;
+    width: 580px;
+    border-radius: 4px;
+    transition: .5s;
+}
+
+.card-title{
+    height: 400px;
+    width: 581px;
+    box-sizing: border-box;
+    position: relative;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    padding: 6px;
+    transition: .5s;
+}
+
+.personal_github a{ 
+   text-decoration: none;
+   color: black;
+}
+
+.personal_github{
+    height: 35px;
+    width: 150px;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: white;
+    color: black;
+    visibility: hidden;
+    font-weight: 700;
+}
+
+.card-title h2{
+    /* text-decoration: underline; */
+    font-size: 40px;
+    color: rgb(189, 44, 189);
+}
+
+.card-title p{
+    font-size: 20px;
+    margin: 25px;
+    visibility: hidden;
+    opacity: 0;
+    color: white;
+}
+
+#techq-button{
+    margin-top: 50px;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover .card-title{
+    height: 500px;
+    bottom: 240px;
+    background: #4b4646;
+}
+
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover .personal_github{
+    opacity: 1;
+    visibility: visible;
+}
+
+.card:hover .card-images{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+/* Contact */
+
+#contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contact-links{
+    text-decoration: none;
+    color: black;
+}
+
+.contact-links:hover{
+    text-underline-offset: 1rem;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    background: rgb(250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p{
+    font-size: larger;
+}
+
+.contact-icon{
+    height: 3rem;
+}
+
+.linkedin-icon{
+    height: 3.8rem;
+    width: 3.8rem;
+}
+
+/* Footer */
+
+footer{
+    height: 20vh;
+    margin: 0 1rem;
+}
+
+footer p{
+    text-align: center;
+}
+
+.footer-nav li:first-child{
+        margin-right: 0;
+        margin-left: 0;
+}
+
+.footer-nav ul{
+    width:100%;
+    list-style: none;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:15vh;
+    font-size: 1.2em;
+    padding: 10px;
+    font-weight:550;
+    gap: 50px;
+}
+
+.footer-nav div{
+    background-color: rgb(102, 0, 102);
+}
+
+.footer-nav a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-nav a:hover{
+    color: black;
+}

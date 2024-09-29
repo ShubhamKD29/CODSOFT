@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+   <nav>
+    <ul>
+        <li id="name"><span id="first-name">Shubham<span><span id="middle-name">Kr</span><span id="last-name">Debnath</span></li>
+        <li class="hideOnMobile"><a href="#">Home</a></li>
+        <li class="hideOnMobile"><a href="#about">About</a></li>
+        <li class="hideOnMobile"><a href="#experience">Experience</a></li>
+        <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+        <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+        <li onClick="sidebarOpen()" class="menu-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"/></svg></a></li>
+
+    </ul>
+    <ul class="sidebar">
+        <li onClick="sidebarClose()" class="close-button"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px" viewBox="0 -960 960 960" width="40px" fill="#000000"><path d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"/></svg></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+     </ul>
+   </nav>
+   
+   <!-- profile -->
+   <section id="profile">
+        <div class="profile-pic-container">
+            <img src="assets/Profile pic.png" alt="profile-pic">
+        </div>
+        <div class="personal-info-container">
+            <p class="text_1">Hello, I'm</p>
+            <h1 class="title">Shubham Kumar Debnath</h1>
+            <p class="text_2">Frontend Developer</p>
+            <div class="btn-container">
+                <button id="btn-1" class="btn">Download cv</button>
+                <button id="btn-2" class="btn">Contact Info</button>
+            </div>
+            <div class="social-container">
+                <a href="https://www.linkedin.com/in/shubham-kumar-debnath-211a9426a"><img class="icon" src="assets/linkedin.png" alt="linkedin_logo"></a>
+                <a href="https://github.com/ShubhamKD29"><img class="icon"src="assets/github.png" alt="github_logo"></a>
+                <a  id="instagram" href="https://www.instagram.com/_______tonight_gamer___?igsh=eXc3aHpjYnVjZHl6"><img class="icon"src="assets/instagram.png" alt="instagram_logo"></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="about-text"><span class="starting-text">Know</span><br />About Me</h2>
+       <div class="about-main-container">
+            <div class="about-image-container">
+                <img id="about-image" src="assets/about_section_pic.png" alt="myPic">
+            </div>
+            
+            <div class="about-content-container">
+                <div class="about-experience-container">
+                    <img class="about-image" src="assets/about_experience.png" alt="bag icon">
+                    <h3 class="about-subheading">Experience</h3>
+                    <p class="about-info">*Fresher</p>
+                </div>
+                <div class="about-education-container">
+                    <img class="about-image" src="assets/about_education.png" alt="cap icon">
+                    <h3 class="about-subheading">Education</h3>
+                    <p class="about-info">BCA <br />Brainware University<br />Kolkata</p>
+                </div>
+                <div class="about-myself">
+                    <p class="about-sentence">
+                        I’m a BCA graduate with a passion for coding, exploring new tech, and innovative projects.
+                    </p>
+                </div>
+            </div>
+       </div>
+    </section>
+    <!-- Experience -->
+    <section id="experience">
+        <h2 id = "experience-text" class="text-1"><span class="sub-text-1">Explore My</span><br />Experience</h2>
+        <div class="experience-details-container">
+            <div class="about-container">
+                <div class="details-container">
+                    <h2 id="skill-sets">Skill Sets</h2>
+                    <div class="article-container">
+                        <article>
+                            <div class="info">
+                                <img class="checkmark" src="assets/checkmark.png" alt="check_mark_icon">
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="info">
+                                <img class="checkmark" src="assets/checkmark.png" alt="check_mark_icon">
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="info">
+                                <img class="checkmark" src="assets/checkmark.png" alt="check_mark_icon">
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="info">
+                                <img class="checkmark" src="assets/checkmark.png" alt="check_mark_icon">
+                                <h3>PHP</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="info">
+                                <img class="checkmark" src="assets/checkmark.png" alt="check_mark_icon">
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <div class="info">
+                                <img class="checkmark" src="assets/checkmark.png" alt="check_mark_icon">
+                                <h3>MySQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container-2">
+                    <div class="article-container">
+                        <article  class="internship-section">
+                            <h2 class="internship-heading">Current Internship</h2>
+                            <p class="intership-content">I'm currently doing an internship at Codsoft.</p>
+                            <!-- Notification Section -->
+                            <div class="notification">
+                                <span id="active-text">Active</span>
+                            </div>
+                        </article>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+     <section id="projects">
+        <h2 id="project-text" class="text-1"><span id="sub-text-2" class="sub-text-1">Explore My</span><br />Projects</h2>
+        <div class="projects-container">
+            <div class="card">
+                <img class="card-images" src="assets/techQ.jpg" alt="techQ">
+                <div class="card-title">
+                    <h2>techQ</h2>
+                    <p>This is a website made by using HTML & Bootstrap </p>
+                    <button id="techq-button" class="personal_github"><a href="https://github.com/ShubhamKD29/Making-website-using-Bootstrap.git">Github Repository</a></button>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-images" src="assets/stone_paper_scissors.jpg" alt="js_game">
+                <div class="card-title">
+                    <h2>Stone Papers Scissors Game</h2>
+                    <p>This is just a stone papers scissors game, which can be played between player & computer</p>
+                    <button class="personal_github"><a href="https://github.com/ShubhamKD29/rock_paper_scissors.git">Github Repository</a></button>
+                </div>
+            </div>
+
+           <div class="card">
+                <img class="card-images" src="assets/password_generator.jpg" alt="react_password_generator">
+                <div class="card-title">
+                    <h2>Password Generator - React</h2>
+                    <p>This is a random password generator made by using react</p>
+                    <button class="personal_github"><a href="https://github.com/ShubhamKD29/Password_Generator.git">Github Repository</a></button>
+                </div>
+            </div>
+        </div>
+
+     </section>
+
+     <!-- Contact -->
+      <section id="contact">
+        <h2 id="contact-text" class="text-1"><span id="sub-text-3" class="sub-text-1">Get In Touch</span><br />Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info-container">
+                <img class="checkmark contact-icon" src="assets/email.png" alt="Email icon">
+                <p><a class="contact-links" href="mailto:debnathshubham38@gmail.com">debnathshubham38@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img class="checkmark contact-icon linkedin-icon" src="assets/linkedin.png" alt="LinkedIn icon">
+                <p><a class="contact-links" href="https://www.linkedin.com/in/shubham-kumar-debnath-211a9426a">LinkedIn</a></p>
+            </div>
+        </div>
+      </section>
+    
+    <!-- Footer -->
+
+    <footer>
+        <nav class="footer-nav">
+            <div>
+                <ul id="footer-ul">
+                    <li class="footer-list nav-1"><a href="#">Home</a></li>
+                    <li class="footer-list"><a href="#about">About</a></li>
+                    <li class="footer-list"><a href="#experience">Experience</a></li>
+                    <li class="footer-list"><a href="#projects">Projects</a></li>
+                    <li class="footer-list"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Shubham Kumar Debnath. All Rights Reserved.</p>
+    </footer>
+
+
+   <!-- Scripts -->
+   <script src="script.js"></script>
+</body>
+
+</html>
