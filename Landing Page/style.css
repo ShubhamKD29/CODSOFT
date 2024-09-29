@@ -307,12 +307,14 @@ nav{
     color: black;
     font-weight: 550;
     font-family: "Kanit", sans-serif;
+    cursor: default;
 }
 
 .discount-content p{
     margin-top: 20px;
     font-weight: 550;
     color: white;
+    cursor: default;
 }
 
 .discount-button{
@@ -357,8 +359,8 @@ nav{
 
 .container_2{
     width: 400px;
+    cursor: default;
 }
-
 
 .container_2 img{
     width: 400px;
@@ -388,6 +390,7 @@ nav{
 
 .container_3{
     width: 400px;
+    cursor: default;
 }
 
 .container_3 img{
