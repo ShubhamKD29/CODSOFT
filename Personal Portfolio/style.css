@@ -415,7 +415,7 @@ a:hover{
 #active-text {
     font-weight: bold;
     font-size: 18px;
-    color: #4CAF50;
+    color: #f93b13;
     animation: blink 1s infinite; /* Blinking effect */
 }
 
